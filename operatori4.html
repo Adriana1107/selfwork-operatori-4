@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>operatori 4</h1>
+    
+    <script>
+
+        // Dichiarazioni delle variabili
+        let numeroTotaleGatti = 17;
+        let numeroGattiPerFila = 5; 
+        
+        // Calcolo del numero di file complete
+        let numeroFile = Math.floor(numeroTotaleGatti / numeroGattiPerFila);
+        
+        // Calcolo del numero di gatti mancanti per completare una nuova fila
+        let gattiMancanti = numeroGattiPerFila - (numeroTotaleGatti % numeroGattiPerFila);
+        
+        // Calcolo del numero di gatti che rimangono fuori
+        let gattiRimanenti = numeroTotaleGatti % numeroGattiPerFila;
+        
+        // Stampa del risultato
+        console.log(`Ci sono ${numeroFile} file di gatti e ne mancano ${gattiMancanti} per una nuova fila, con un avanzo di ${gattiRimanenti}`);
+    </script>
+</body>
+</html>
